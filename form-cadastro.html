@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <title>Seminário Plenamente</title>
+    <!-- CSS dependencies -->
+  <link rel="stylesheet" href="elegant.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+</head>
+<body class="text-center">
+
+  <!-- Cover -->
+  <div class="d-flex align-items-center py-5 photo-overlay" style=" background-image: url(./img/1.jpg); background-position: top left;  background-size: 100%;  background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="text-white p-5 bg-dark-opaque col-12 col-lg-8 mx-auto">
+          <h1 class="display-2">Seminário PlenaMente</h1>
+          <h2 contenteditable="true" style="">30 e 31 de Março de 2019</h2>
+          <!-- <a class="btn btn-lg mt-4 btn-primary" href="http://www.uol.com.br">GARANTA SUA VAGA</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <h3>Ficha de cadastro</h3>
+
+        <div class="col-md-8 container">
+          <form method="POST" action="send-mail.php">
+            <fieldset class="form-group my-1">
+              <input type="hidden" name="assunto" value="Inscrição Plenamente 1º Semestre">
+              <input type="text" name="remetenteNome" class="form-control" id="Input Nome" placeholder="Nome*" required=""> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteSobrenome" class="form-control" id="Input Sobrenome" placeholder="Sobrenome*" required=""> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteNascimento" class="form-control" id="Input Nascimento" placeholder="Data de Nascimento*" required=""> </fieldset>
+            <fieldset class="form-group my-1"> 
+              <input type="text" name="remetenteProfissao" class="form-control" id="Input Profissao" placeholder="Profissão*"> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteEstcivil" class="form-control" id="Input EstCivil" placeholder="Estado Civil*" required=""> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="email" name="remetenteEmail" class="form-control" id="Input Email" placeholder="Email*" required=""> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteWhats" pattern="[0-9]{11}" class="form-control" id="Input Whats" placeholder="WhatsApp com Cód. Área*" title="Use apenas números" required=""> </fieldset>
+            <fieldset class="form-group my-1"> 
+              <input type="text" name="remetenteCidade" class="form-control" id="Input Cidade" placeholder="Cidade*" required=""> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteEnd" class="form-control" id="Input Endereco" placeholder="Endereço"> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteCep" pattern="[0-9]{8}" title="Use apenas números" class="form-control" id="Input CEP" placeholder="CEP"> </fieldset>
+            <fieldset class="form-group my-1">
+              <input type="text" name="remetenteAlergia" class="form-control" id="Input Alergia" placeholder="Alergia a algum alimento? Qual?"> </fieldset>
+              <h6>*Campos obrigatórios</br></h6>
+            <button type="submit" value="enviarForm" name="enviarForm" class="btn btn-secondary">Enviar</button>
+          </form>
+        </div>
+
+
+
+</body>
